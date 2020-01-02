@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pie Clicker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Pie Clicker (Not a cookie clicker clone)</h1>
+    <div class="column">
+        <div>Number of pies: <span id="pieCounter">0</span></div>
+        <img id="pie" onClick="clickPie()" src="images/pie.png">
+        <br>
+        <button onclick="reset()">RESET</button>
+    </div>
+    <div class="column">
+        <h3>Store</h3>
+        <div>Pies for click: <span id="piesPerClick">1</span></div> 
+        Upgrade Clicker: 
+        <br>
+        <button onclick="upgradeClicker(1,10)">+1 <br> Cost: 10</button>
+        <button onclick="upgradeClicker(5,50)">+5 <br> Cost: 50</button>
+    </div>
+    <div class="column">
+        <h3>Upgrades</h3>
+        <div id="bakerDestination"></div>
+        <div id="robotDestination"></div>
+        
+    </div>
+    
+</body>
+</html>
